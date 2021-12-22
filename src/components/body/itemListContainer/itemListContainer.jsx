@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {Container, Row} from "react-bootstrap"
 import ItemList from "./itemList/itemList";
-import DBlist from "../../data/data"
+import DBlist from "../../../data/data"
 
 import "./itemListContainer.css"
 
