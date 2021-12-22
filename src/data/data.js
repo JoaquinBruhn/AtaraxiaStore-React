@@ -1,72 +1,72 @@
 
 let DBlist = [
     {
-        productId:"#9A58B",
+        productId:"9A58B",
         name:"Guantes de Cuero",
-        category:"#accesorio",
+        category:"accesorios",
         description:"Esta es la descripcion de los guantes de cuero",
         size:"M",
         color:"Castaño",
         stock:5
     },
     {
-        productId:"#5EY56",
+        productId:"5EY56",
         name:"Pantalon de Cuero",
-        category:"#pantalones",
+        category:"pantalones",
         description:"Esta es la descripcion de los pantalones de cuero",
         size:"S",
         color:"negro",
         stock:3
     },
     {
-        productId:"#YT346",
+        productId:"YT346",
         name:"Remera",
-        category:"#tops",
+        category:"tops",
         description:"Esta es la descripcion de la remera",
         size:"L",
         color:"Blanco",
         stock:8
     },
     {
-        productId:"#589YI",
+        productId:"589YI",
         name:"Buzo",
-        category:"#tops",
+        category:"tops",
         description:"Esta es la descripcion del buzo",
         size:"L",
         color:"Azul Oscuro",
         stock:2
     },
     {
-        productId:"#YR1R8",
+        productId:"YR1R8",
         name:"Medias",
-        category:"#calzado",
+        category:"calzado",
         description:"Esta es la descripcion de las medias",
         size:"S",
         color:"blanco",
         stock:10
     },
     {
-        productId:"#PA67W",
+        productId:"PA67W",
         name:"Botas",
-        category:"#calzado",
+        category:"calzado",
         description:"Esta es la descripcion de las botas",
         size:"M",
         color:"Blanco",
         stock:3
     },
     {
-        productId:"#92OP2",
+        productId:"92OP2",
         name:"Brasalete",
-        category:"#Accesorios",
+        category:"accesorios",
         description:"Esta es la descripcion del brasalete",
         size:"S",
         color:"Azul Oscuro",
         stock:4
     },
     {
-        productId:"#M3A3M",
+        productId:"M3A3M",
         name:"Jean",
-        category:"#pantalones",
+        category:"pantalones",
         description:"Esta es la descripcion del jean",
         size:"S",
         color:"blanco",
@@ -77,22 +77,22 @@ let DBlist = [
 let categorys = [
     {
         categoryName:"Tops",
-        categoryID:"#tops",
+        categoryID:"tops",
         categoryDescription:"Esta es la lista de tops",
     },
     {
         categoryName:"Pantalones",
-        categoryID:"#pantalones",
+        categoryID:"pantalones",
         categoryDescription:"Esta es la lista de pantalones",
     },
     {
         categoryName:"Calzado",
-        categoryID:"#calzado",
+        categoryID:"calzado",
         categoryDescription:"Esta es la lista de productos para los pies",
     },
     {
         categoryName:"Accesorios",
-        categoryID:"#accesorios",
+        categoryID:"accesorios",
         categoryDescription:"Esta es la lista de accesorios",
     },
 ]

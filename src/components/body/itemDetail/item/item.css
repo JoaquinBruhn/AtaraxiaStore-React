@@ -1,0 +1,34 @@
+@import url(../../../../globalStyles.css);
+
+.product{
+    width: 28rem;
+    min-height: 20rem;
+    padding: 10px;
+    margin: 20px auto;
+    border: 1px solid var(--black);
+}
+
+.product-details > h5,
+.product-details > div:nth-child(2) {
+    text-align: start;
+}
+
+.product-details > div:nth-child(2) > p{
+    font-weight: bold;
+}
+
+.product-details > div:nth-child(2) > p > span{
+    font-weight: normal;
+}
+
+.stock{
+    margin-top: 3rem;
+}
+
+.stock > p{
+    font-weight: bold;
+}
+
+.stock > p > span{
+    font-weight: normal;
+}

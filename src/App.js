@@ -17,8 +17,8 @@ function App() {
         <NavBar />
           <Routes>
             <Route exact path="/" element={<ItemListContainer greeting={greeting}/>}/>
-            <Route exact path="/category/:#calzado" element={<ItemListContainer greeting={greeting}/>}/>
-            <Route exact path="/item/id" element={<ItemDetail/>}/>
+            <Route exact path="/category/:category" element={<ItemListContainer greeting={greeting}/>}/>
+            <Route exact path="/item/:itemID" element={<ItemDetail/>}/>
             <Route exact path="/pokeapi" element={<ApiChallenge/>}/>
             <Route path="/*" element={<h1>404</h1>}/>
           </Routes>

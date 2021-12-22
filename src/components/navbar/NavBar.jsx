@@ -7,8 +7,8 @@ function NavBar (){
         <nav className="navBar">
             <Link  to="/" className="logo" ><h2>ataraxia</h2></Link>
             <div className="navigation">
-                <NavLink to="/category/top"></NavLink>
-                <NavLink to="/category/pantalones">Product List</NavLink>
+                <NavLink to="/category/tops">Top</NavLink>
+                <NavLink to="/category/pantalones">Pantalones</NavLink>
                 <NavLink to="/category/calzado">Calzado</NavLink>
                 <NavLink to="/category/accesorios">Accesorios</NavLink>
                 <CartWidget />
