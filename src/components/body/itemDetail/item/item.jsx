@@ -1,11 +1,26 @@
-import React from "react";
+import React, {useState} from "react";
 import ItemCount from "../../itemCount/itemCount";
+import Cart from "../../cart/cart";
 
 
 
 import "./item.css"
 
 function Item ({product}){
+
+    const [amount, setAmount] = useState(1)
+    const [readyToBuy, setReadyToBuy] = useState(false)
+
+    const onAdd = (()=>{
+        setAmount(amount+1)
+    })
+    const onRemove = (()=>{
+        setAmount(amount-1)
+    })
+
+    const cartSwap = (()=>{
+        setReadyToBuy(!readyToBuy)
+    })
 
     return(
         <div className="product">
@@ -19,8 +34,18 @@ function Item ({product}){
                     <p><span>{product[0].description}</span></p>
                 </div>
                 <div className="stock">
-                    <ItemCount stock={product[0].stock}/>
+                    {readyToBuy?
+                    <Cart amount={amount}/>
+                    :
+                    <ItemCount stock={product[0].stock} amount={amount} onAdd={onAdd} onRemove={onRemove}/>
+                    }
                     <p>Stock Disponible: <span>{product[0].stock}</span></p>
+                    <button onClick={cartSwap}>
+                        {readyToBuy?
+                        "Elegir Cantidad"
+                        :
+                        "Listo Para Comprar"}
+                    </button>
                 </div>
             </div>
         </div>

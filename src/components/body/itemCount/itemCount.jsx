@@ -1,17 +1,9 @@
-import React, {useState} from "react";
+import React from "react";
 
 import './itemCount.css'
 
-function ItemCount({stock}){
-    const [amount, setAmount] = useState(1)
+function ItemCount({stock, amount, onAdd, onRemove}){
 
-    const onAdd = (()=>{
-        setAmount(amount+1)
-    })
-
-    const onRemove = (()=>{
-        setAmount(amount-1)
-    })
 return(
     <div className="item-count">
         {amount <= 1 ? <button className="unactive-button" >-</button> : <button className="active-button" onClick={onRemove}>-</button>}
