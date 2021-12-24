@@ -21,7 +21,6 @@ const filteredList = new Promise((resolve,reject)=>{
 function ItemListContainer({greeting}){
 
     const categoria = useParams().category
-    console.log(categoria)
 
     const [productList, setProductList] = useState(null)
 

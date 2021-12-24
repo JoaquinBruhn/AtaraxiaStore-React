@@ -15,7 +15,7 @@ function ApiChallenge(){
     useEffect(()=>{
         setTimeout(()=>{
             pokeFetch(pokemon)
-        },3000)
+        },1000)
     },[pokemon])
 
     async function pokeFetch (pokemon){
