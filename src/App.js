@@ -21,17 +21,15 @@ function App() {
     <div className="App">
       <BrowserRouter>
       <CartProvider>
-      <NewContext.Provider value="test">
         <NavBar />
-          <Routes>
-            <Route exact path="/" element={<ItemListContainer greeting={greeting}/>}/>
-            <Route exact path="/category/:category" element={<ItemListContainer greeting={greeting}/>}/>
-            <Route exact path="/item/:itemID" element={<ItemDetail/>}/>
-            <Route exact path="/pokeapi" element={<ApiChallenge/>}/>
-            <Route exact path="/test" element={<Test/>}/>
-            <Route path="/*" element={<h1>404</h1>}/>
-          </Routes>
-        </NewContext.Provider>
+        <Routes>
+          <Route exact path="/" element={<ItemListContainer greeting={greeting}/>}/>
+          <Route exact path="/category/:category" element={<ItemListContainer greeting={greeting}/>}/>
+          <Route exact path="/item/:itemID" element={<ItemDetail/>}/>
+          <Route exact path="/pokeapi" element={<ApiChallenge/>}/>
+          <Route exact path="/test" element={<Test/>}/>
+          <Route path="/*" element={<h1>404</h1>}/>
+        </Routes>
         </CartProvider>
       </BrowserRouter>
     </div>

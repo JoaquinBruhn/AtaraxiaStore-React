@@ -8,7 +8,7 @@ import "./itemDetail.css"
 function ItemDetail(){
     const URLparams = useParams().itemID
 
-    const product = DBlist.filter((el)=>{
+    const product = DBlist.find((el)=>{
         return el.productId === URLparams
     })
 
