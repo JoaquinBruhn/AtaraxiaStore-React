@@ -5,6 +5,8 @@ let DBlist = [
         name:"Guantes de Cuero",
         category:"accesorios",
         description:"Esta es la descripcion de los guantes de cuero",
+        price:620,
+        amountSelected:0,
         size:"M",
         color:"Castaño",
         stock:5
@@ -14,6 +16,8 @@ let DBlist = [
         name:"Pantalon de Cuero",
         category:"pantalones",
         description:"Esta es la descripcion de los pantalones de cuero",
+        price:1500,
+        amountSelected:0,
         size:"S",
         color:"negro",
         stock:3
@@ -23,6 +27,8 @@ let DBlist = [
         name:"Remera",
         category:"tops",
         description:"Esta es la descripcion de la remera",
+        price:900,
+        amountSelected:0,
         size:"L",
         color:"Blanco",
         stock:8
@@ -32,6 +38,8 @@ let DBlist = [
         name:"Buzo",
         category:"tops",
         description:"Esta es la descripcion del buzo",
+        price:1200,
+        amountSelected:0,
         size:"L",
         color:"Azul Oscuro",
         stock:2
@@ -41,6 +49,8 @@ let DBlist = [
         name:"Medias",
         category:"calzado",
         description:"Esta es la descripcion de las medias",
+        price:200,
+        amountSelected:0,
         size:"S",
         color:"blanco",
         stock:10
@@ -50,6 +60,8 @@ let DBlist = [
         name:"Botas",
         category:"calzado",
         description:"Esta es la descripcion de las botas",
+        price:1800,
+        amountSelected:0,
         size:"M",
         color:"Blanco",
         stock:3
@@ -59,6 +71,8 @@ let DBlist = [
         name:"Brasalete",
         category:"accesorios",
         description:"Esta es la descripcion del brasalete",
+        price:750,
+        amountSelected:0,
         size:"S",
         color:"Azul Oscuro",
         stock:4
@@ -68,6 +82,8 @@ let DBlist = [
         name:"Jean",
         category:"pantalones",
         description:"Esta es la descripcion del jean",
+        price:1350,
+        amountSelected:0,
         size:"S",
         color:"blanco",
         stock:4

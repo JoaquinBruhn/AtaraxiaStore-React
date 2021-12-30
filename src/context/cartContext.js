@@ -16,15 +16,29 @@ const CartProvider = ({children}) => {
 
     const [cartList, setCartList] = useState([])
 
-    function addToCart(e) {
-        console.log(e)
-        setCartList([...cartList, e])
+    const clearCart = ()=>{
+        setCartList([])
     }
-    console.log(cartList)
+
+    function addToCart(e) {
+        const cartCheck = cartList.findIndex(o=>o.productId === e.productId)
+
+        if (cartCheck !== -1){
+            cartList[cartCheck].amountSelected = e.amountSelected
+        }else{
+            setCartList([...cartList, e])
+        }
+    }
+
+    function removeFromCart(e) {
+        const newCartList = cartList.filter(o=>o.productId !== e.productId)
+        
+        setCartList(newCartList)
+    }
     
 //----------------------------------------------------
 
-    const data = {contextTest ,handleContextTest, addToCart}
+    const data = {contextTest, handleContextTest, cartList, clearCart, removeFromCart, addToCart}
 
     return(
         <CartContext.Provider value={data}>

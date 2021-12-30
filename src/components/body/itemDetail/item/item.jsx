@@ -26,6 +26,7 @@ function Item ({product}){
     })
 
     function addItem(){
+        product.amountSelected=amount
         addToCart(product)
     }
 
@@ -37,6 +38,7 @@ function Item ({product}){
                 <div>
                     <p>Talle: <span>{product.size}</span></p>
                     <p>Color: <span>{product.color}</span></p>
+                    <p>Precio: <span>${product.price}</span></p>
                     <p>Descripcion:</p>
                     <p><span>{product.description}</span></p>
                 </div>
